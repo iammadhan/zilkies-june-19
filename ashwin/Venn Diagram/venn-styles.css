@@ -1,0 +1,27 @@
+
+.circle1 {
+    width: 150px;
+    height: 150px;
+    background-color: #90ee90;
+    border-radius: 150px;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    background-color: #ffa500;
+    border-radius: 150px;
+    position: relative;
+    left: 125px;
+    bottom: 150px
+}
+
+.circle3 {
+    width: 150px;
+    height: 150px;
+    background-color: #d87093;
+    border-radius: 150px;
+    position: relative;
+    left: 60px;
+    bottom: 205px
+}

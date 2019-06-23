@@ -1,0 +1,39 @@
+body {
+    text-align: center
+}
+
+body > section {
+    width: 28%;
+    display: inline-block;
+    border: 2px solid #808080;
+    margin: 1%;
+    height: 68vh;
+    background-color: #d3d3d3
+}
+
+header {
+    border: 2px solid #808080;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #d3d3d3
+}
+
+footer {
+    border: 2px solid #808080;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    background-color: #d3d3d3
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 40%;
+}
+
+.middle {
+    width: 35vw
+}

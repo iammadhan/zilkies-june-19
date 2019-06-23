@@ -1,0 +1,47 @@
+body {
+    border: 5px solid #000000;
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    position: relative;
+    margin-top: 12vh
+}
+
+.common {
+    border: 2px solid #000000;
+    width: 65vw;
+    margin: auto
+}
+
+.header {
+    margin-top: 8vh;
+    height: 6vh;
+}
+
+.section1 {
+    margin-top: 5vh;
+    height: auto;
+}
+
+.section2 {
+    margin-top: 4vh;
+    height: 5vh;
+    overflow: hidden;
+}
+
+.section3 {
+    margin-top: 4vh;
+    height: 8vh;
+    overflow: scroll;
+}
+
+.footer {
+    margin-top: 4vh;
+    height: 6vh;
+    margin-bottom: 8vh
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
