@@ -1,0 +1,18 @@
+.image {
+    width: 140px;
+    float: right;
+    clear: right;
+}
+
+.image-container {
+    float: right;
+    background: gray;
+}
+
+.image-container p {
+    padding-left: 10px;
+}
+
+.wrapper {
+    width: 50%;
+}
