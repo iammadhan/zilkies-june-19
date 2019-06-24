@@ -10,7 +10,7 @@
     background-color: gray;
 }
 
-.article {
+article {
     float: left;
     width: 50%;
     text-align: center;
