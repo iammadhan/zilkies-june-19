@@ -1,9 +1,18 @@
 
+body {
+    width: 420px;
+    height: 360px;
+    margin: auto;
+    margin-top: 180px
+}
+
 .circle1 {
     width: 150px;
     height: 150px;
     background-color: #90ee90;
     border-radius: 150px;
+    left: 200px;
+    margin-left: 60px
 }
 
 .circle2 {
@@ -13,7 +22,8 @@
     border-radius: 150px;
     position: relative;
     left: 125px;
-    bottom: 150px
+    bottom: 150px;
+    margin-left: 60px
 }
 
 .circle3 {
@@ -23,5 +33,6 @@
     border-radius: 150px;
     position: relative;
     left: 60px;
-    bottom: 205px
+    bottom: 205px;
+    margin-left: 60px
 }
