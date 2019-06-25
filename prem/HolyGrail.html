@@ -1,7 +1,7 @@
-<!-- <!DOCTYPE html> -->
 <html>
+
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         HolyGrail
     </title>
@@ -9,73 +9,77 @@
         body {
             overflow: hidden;
         }
-        .head,.foot,.sidebar1,.sidebar2,.article{
+
+        .head,
+        .foot,
+        .sidebar1,
+        .sidebar2,
+        .article {
             background-color: #D3D3D3;
-            font-weight:bold;
+            font-weight: bold;
         }
 
-        .head,.foot{
+        .head,
+        .foot {
             height: 19%;
             text-align: center;
             box-sizing: border-box;
-            padding: 4%;
         }
+
         .head {
-            margin-bottom:0.5%;
+            margin-bottom: 5px;
         }
+
         .foot {
-            margin-top:0.5%;
+            margin-top: 5px;
             margin-bottom: 0;
         }
+
         .content {
             height: 60%;
         }
-        .sidebar1,.sidebar2{
-            width: 22%;
+
+        .sidebar1,
+        .sidebar2 {
+            width: 200px;
+        }
+
+        .article {
+            width: 855px;
+        }
+
+        span{
+        position:relative;
+        top:40%;
+       }
+
+        .sidebar1,
+        .article,
+        .sidebar2 {
             height: 100%;
-            box-sizing: border-box;
+            display: inline-block;
             text-align: center;
-            padding-top:12.5%;
-        }
-        .sidebar1{
-            float: left;   
-        }
-        .sidebar2{
-            float: right;
-        }
-        .article{
-            position:absolute;
-            top:0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin:auto;
-            width: 54%;
-            height: 58.5%;
-            box-sizing: border-box;
-            text-align: center;
-            padding: 12%;           
         }
     </style>
 </head>
 
 <body>
     <div class="head">
-        Header
+        <span>Header</span>
     </div>
     <section class="content">
         <div class="sidebar1">
-            Sidebar 1
+            <span>Sidebar 1</span>
         </div>
         <div class="article">
-            Article
+            <span>Article</span>
         </div>
         <div class="sidebar2">
-            Sidebar 2
+            <span>Sidebar 2</span>
         </div>
     </section>
     <div class="foot">
-        Footer
+        <span>Footer</span>
     </div>
 </body>
 
