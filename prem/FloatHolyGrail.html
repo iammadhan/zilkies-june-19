@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        HolyGrail
+    </title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .head,
+        .foot,
+        .sidebar1,
+        .sidebar2,
+        .article {
+            background-color: #D3D3D3;
+            font-weight: bold;
+        }
+
+        .head,
+        .foot {
+            height: 19%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .head {
+            margin-bottom: 5px;
+        }
+
+        .foot {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .content {
+            height: 60%;
+        }
+
+        .sidebar1,
+        .sidebar2 {
+            width: 200px;
+        }
+
+        .article {
+            width: 853px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        span {
+            position: relative;
+            top: 40%;
+        }
+
+        .sidebar1,
+        .article,
+        .sidebar2 {
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <span>Header</span>
+    </div>
+    <section class="content">
+        <div class="sidebar1">
+            <span>Sidebar 1</span>
+        </div>
+        <div class="article">
+            <span> Article</span>
+        </div>
+        <div class="sidebar2">
+            <span>Sidebar 2</span>
+        </div>
+    </section>
+    <div class="foot">
+        <span>Footer</span>
+    </div>
+</body>
+
+</html>
