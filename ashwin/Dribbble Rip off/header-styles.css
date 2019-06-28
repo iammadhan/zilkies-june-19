@@ -1,0 +1,160 @@
+body {
+    margin: 0px
+}
+
+.header {
+    width: 100%;
+    background-color: #333333;
+    height: 56px;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffffd9
+}
+
+.header>a:nth-child(1) img {
+    color: white
+}
+
+.header>a:nth-child(2) {
+    color: white
+}
+
+.header>a:nth-child(9) {
+    color: #E76568;
+    font-size: 14px;
+}
+
+.header>a:nth-child(11) {
+    padding: 5px;
+    border-radius: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+
+.header>a:nth-child(11):hover {
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.header>a:nth-child(11) i:hover {
+    color: white
+}
+
+.header>a:nth-child(8) {
+    margin-right: 150px
+}
+
+i {
+    color: gray
+}
+
+.search-box {
+    border: none;
+    width: 240px;
+    background-color: white;
+    border-radius: 4px
+}
+
+.header>.search-box i {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #bbb
+}
+
+.header>.search-box input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    position: relative;
+    border: none;
+    bottom: 3px;
+    right: 2px;
+    width: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bbb
+}
+
+.collapsed-header {
+    display: none;
+}
+
+.collapsed-content {
+    display: none;
+}
+
+label {
+    width: 26px;
+}
+
+.collapsed-header i:nth-child(1) {
+    position: relative;
+    left: 15px;
+    top: 5px;
+    font-weight: 500px
+}
+
+#toggle {
+    display: none;
+}
+
+.line-separator {
+    width: 95%;
+    border: 0.5px solid #A4A4A4
+}
+
+.user {
+    display: flex;
+    width: 240px;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.mobile-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 240px;
+}
+
+/* img {
+    border-radius: 20px
+} */
+
+.mobile-section > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px
+}
+
+.mobile-sec-row {
+    display: flex;
+    width: 300px;
+    justify-content: space-between
+}
+
+.spacing {
+    padding: 5px;
+}
+
+.find {
+    color: #3A8BBB
+}

@@ -1,0 +1,121 @@
+
+/* Media Queries for iPad, iPad Pro and iPhone X */
+
+@media screen and (max-width: 1120px) {
+
+    .header {
+        display: none;
+    }
+
+    .collapsed-header {
+        display: block;
+        width: 100%;
+        background-color: #1E1E1E;
+        height: 40px;
+    }
+
+    #toggle:checked+.collapsed-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #1E1E1E
+    }
+
+    #toggle:checked+.secondary-nav {
+        display: none;
+    }
+
+    label {
+        display: block;
+        cursor: pointer
+    }
+
+    .search-box {
+        width: 96%;
+        height: 40px;
+        margin: 10px
+    }
+
+    input {
+        width: 90%;
+        margin: 2px;
+        border: none;
+        padding: 10px 10px 11px 30px
+    }
+
+    .collapsed-header div>a {
+        margin: 10px;
+        font-weight: 500;
+        color: white
+    }
+
+    /* Secondary Nav bar */
+
+    .secondary-nav .secondary-nav-b {
+        display: none;
+    }
+
+    .secondary-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .secondary-nav-mobile>a {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .secondary-nav-mobile {
+        display: flex;
+        background-color: #FFFFFF;
+        flex-direction: row;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: scroll;
+        width: 94.7%;
+    }
+
+    .secondary-nav {
+        border-bottom: 1px solid #EDEDEE;
+    }
+
+    .up {
+        display: flex;
+    }
+
+    .down {
+        display: none
+    }
+
+    /* Not following text section */
+
+    .not-following {
+        width: 340px;
+    }
+
+    .not-following h2 {
+        font-size: 25.2px;
+        text-align: center;
+    }
+
+    .not-following p {
+        text-align: center
+    }
+
+    ::-webkit-scrollbar {
+        background: transparent
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .secondary-logo {
+        position: relative;
+        bottom: 15px;
+        width: 10px;
+        left: 40%;
+    }
+}
