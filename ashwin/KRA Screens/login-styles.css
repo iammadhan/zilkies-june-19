@@ -1,5 +1,6 @@
 body {
-    background-color: #fdf7f7
+    background-color: #fdf7f7;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar {
@@ -38,7 +39,6 @@ body {
 
 .login-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: #ff5063;
     letter-spacing: 2px;
@@ -92,7 +92,6 @@ body {
 
 h2 {
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
     color: #ff5063;
     letter-spacing: 1px;
     font-weight: bold
@@ -108,7 +107,6 @@ h2 {
 }
 
 .name-input .username-label {
-    font-family: 'Open Sans', sans-serif;
     color: #ff5063;
     font-size: 12px;
     font-weight: bold;
@@ -188,7 +186,6 @@ input[type='checkbox'].check-custom:checked~.check-toggle {
 }
 
 .checkbox-label {
-    font-family: 'Open Sans', sans-serif;
     padding: 16px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -199,7 +196,6 @@ input[type='checkbox'].check-custom:checked~.check-toggle {
 .login {
     background-color: #ff5063;
     border: none;
-    font-family: 'Open Sans', sans-serif;
     color: white;
     letter-spacing: 1px;
     font-size: 10px;
@@ -207,7 +203,6 @@ input[type='checkbox'].check-custom:checked~.check-toggle {
 }
 
 .forgot-password {
-    font-family: 'Open Sans', sans-serif;
     color: #ff5063;
     letter-spacing: 1px;
     font-weight: bold;
@@ -259,7 +254,6 @@ input[type='checkbox'].check-custom:checked~.check-toggle {
 
 /* label */
 .input-label {
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;

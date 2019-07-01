@@ -1,5 +1,6 @@
 body {
-    background-color: #fdf7f7
+    background-color: #fdf7f7;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar {
@@ -40,7 +41,6 @@ body {
 .tab>a {
     margin-left: 3%;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: black;
@@ -61,7 +61,6 @@ body {
 
 .logout-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -101,7 +100,6 @@ body {
 }
 
 h4 {
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     color: #ff5064;
@@ -258,7 +256,6 @@ select {
 }
 
 .kra-year {
-    font-family: 'Open Sans', sans-serif;
     color: gray;
     letter-spacing: 1px;
     font-size: 12px;
