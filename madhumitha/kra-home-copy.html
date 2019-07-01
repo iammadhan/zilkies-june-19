@@ -3,8 +3,10 @@
 
 <head>
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Home</title>
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="kra-home-copy.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -13,70 +15,99 @@
         <div class="logo">
             <fig><img src="Asset-Logo.svg" alt="zilker"></fig>
         </div>
-        <div class="links">
-            <div class="nav-item"><a href="#home">MY HOME</a></div>
-            <div class="nav-item"><a href="#mentees">MENTEES</a></div>
-            <div class="nav-item"><a href="#notifications">NOTIFICATIONS</a></div>
-            <div class="nav-item"><a href="#old-kra">OLD KRA</a></div>
-        </div>
+
+        <ul class="links">
+            <li class="nav-item"><a href="#home" class="my-home">MY HOME</a></li>
+            <li class="nav-item"><a href="#mentees">MENTEES</a></li>
+            <li class="nav-item"><a href="#notifications">NOTIFICATIONS</a></li>
+            <li class="nav-item"><a href="old-kra">OLD KRA</a></li>
+        </ul>
+
         <div class="account">
             <div class="account-item">ZILKERTECH@ZTECH.IO</div>
-            <div class="account-item"><a href="#logout">LOGOUT</a></div>
+            <div class="account-item"><a href="#logout" class="logout">LOGOUT</a></div>
         </div>
     </div>
     <div class="current-kra shadow">
-        <div class="topic" style="color: #FF5063"><b>CURRENT KRA'S</b></div>
+        <div class="topic">
+            <p>CURRENT KRA'S</p>
+        </div>
         <div>
             <div class="set">
-                <div><b> KRA SET 1</b></div>
-                <div class="year"> YEAR:2019 / QUARTER:1</div>
+                <div>KRA SET 1</div>
+                <div class="year">
+                    <p> YEAR:2019 / QUARTER:1</p>
+                </div>
             </div>
             <div class="progress">
                 <div class="progress-img">
                     <ul>
-                        <li class="circle progress-img">1</li>
-                        <li class="other-circle circle progress-img">2</li>
-                        <li class="other-circle circle progress-img">3</li>
+                        <li class="circle progress-img number">1</li>
+                        <li class="other-circle circle progress-img number">2</li>
+                        <li class="other-circle circle progress-img number">3</li>
                     </ul>
                 </div>
 
             </div>
             <div class="table">
                 <div class="table-topic">
-                    <div class="no"># NO.</div>
-                    <div class="kra-topic">KRA</div>
-                    <div class="self-gain-topic">SELF GAIN</div>
-                    <div class="way-forward-topic">WAY FORWARD</div>
-                </div>
-                <div class="table-row">
-                    <div>1.</div>
-                    <div class="kra-data">Improve your oral & written communication(e-mail, Status updates, JIRA
-                        comments, Documentation)
+                    <div class="no">
+                        <p># NO.</p>
                     </div>
-                    <div>
-                        <textarea class="self-gain" rows="4" cols="4" placeholder="Enter self gain content">
-                              </textarea>
+                    <div class="kra-topic">
+                        <p>KRA</p>
                     </div>
-                    <div class="way">
-                        <div class="way-content"> </div>
+                    <div class="self-gyaan-topic">
+                        <p>SELF GYAAN</p>
+                    </div>
+                    <div class="way-forward-topic">
+                        <p>WAY FORWARD</p>
                     </div>
                 </div>
                 <div class="table-row">
-                    <div>2.</div>
-                    <div class="kra-data">NVEnergy Tasks Delivery / Understanding the requirements / Defect resolution
-                        without any
-                        side-effects</div>
                     <div>
-                        <textarea class="self-gain" rows="4" cols="4"
-                            placeholder="In most organized forms of writing, such as essays, paragraphs contain a topic sentence. This topic sentence">
-                              </textarea>
+                        <p>1.</p>
                     </div>
-                    <div class="way">
-                        <div class="way-content">
+                    <div class="kra-data">
+                        <p>Improve your oral & written communication(e-mail, Status updates, JIRA
+                            comments, Documentation)</p>
+                    </div>
+                    <div>
+                        <p>
+                            <textarea class="self-gain" rows="4" cols="4" placeholder="Enter self gain content">
+                              </textarea>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <textarea class="way-content" rows="4" cols="4">
+                                          </textarea>
+                        </p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div>
+                        <p>2.</p>
+                    </div>
+                    <div class="kra-data">
+                        <p>NVEnergy Tasks Delivery / Understanding the requirements / Defect resolution
+                            without any side-effects</p>
+                    </div>
+                    <div>
+                        <p>
+                            <textarea class="self-gain" rows="4" cols="4"
+                                placeholder="In most organized forms of writing, such as essays, paragraphs contain a topic sentence. This topic sentence">
+                                  </textarea>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <textarea class="way-content" rows="4" cols="4">
+                                      </textarea>
+                        </p>
+                    </div>
+                </div>
 
-                        </div>
-                    </div>
-                </div>
                 <div class="end">
                     <input class="save" type="button" value="SAVE"></input>
                     <input class="submit" type="button" value="SUBMIT"></input>
