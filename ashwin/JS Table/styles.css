@@ -1,0 +1,126 @@
+body {
+    background-color: #fdf7f7
+}
+
+nav {
+    width: 100%;
+    height: 64px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: white
+}
+
+.container {
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table-card {
+    width: 90%;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+    margin-top: 20px
+    /* border: 1px solid pink */
+}
+
+.form-card {
+    width: 95%;
+    height: 150px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.student-table {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid pink; */
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 1px solid gray; */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold
+}
+
+tr:nth-child(n) {
+    background-color: white;
+}
+
+form {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column
+}
+
+.submit-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-sec input {
+    width: 100px;
+    background-color: #ff5064;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #ff5063 radial-gradient(circle, transparent 1%, #ff5063 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: white;
+    background-size: 100%;
+    transition: background 0s;
+}

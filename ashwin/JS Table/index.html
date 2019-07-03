@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Table</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Table</h1>
+    </nav>
+
+    <section class="container">
+
+        <div class="table-card">
+            <div class="student-table">
+
+                <table id="table">
+                    <tr>
+                        <th>Register No.</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Maths</th>
+                        <th>Physics</th>
+                        <th>Chemistry</th>
+                        <th>Computer Science</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form>
+                <div class="input-sec">
+                    <input type="text" name="regNo" placeholder="Register No.">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="grade" placeholder="Grade">
+                    <input type="text" name="maths" placeholder="Maths">
+                    <input type="text" name="physics" placeholder="Physics">
+                    <input type="text" name="chemistry" placeholder="Chemistry">
+                    <input type="text" name="computers" placeholder="Computer Science">
+                </div>
+                <div class="submit-sec">
+                    <!-- <input type="button" name="button" Value="Submit" onClick="submit(this.form)"> -->
+                    <input type="button" class="ripple" name="button" Value="SUBMIT" onClick="testResults(this.form)">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
