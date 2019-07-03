@@ -24,17 +24,28 @@ function testResults(form) {
         cell4.innerHTML = maths;
         cell5.innerHTML = physics;
         cell6.innerHTML = chemistry;
-        cell7.innerHTML = computers
-    }else {
+        cell7.innerHTML = computers;
+        reset(form);
+    } else {
         alert("Please, Fill up all the fields :|")
     }
 }
 
 function fab() {
     var element = document.getElementById("form");
-    if(element.style.display == "flex") {
+    if (element.style.display == "flex") {
         element.style.display = "none";
-    }else {
+    } else {
         element.style.display = "flex";
     }
+}
+
+function reset(form) {
+    form.regNo.value = "";
+    form.name.value = "";
+    form.grade.value = "";
+    form.maths.value = "";
+    form.physics.value = "";
+    form.chemistry.value = "";
+    form.computers.value = ""
 }
