@@ -29,3 +29,12 @@ function testResults(form) {
         alert("Please, Fill up all the fields :|")
     }
 }
+
+function fab() {
+    var element = document.getElementById("form");
+    if(element.style.display == "flex") {
+        element.style.display = "none";
+    }else {
+        element.style.display = "flex";
+    }
+}

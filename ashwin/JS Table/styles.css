@@ -1,5 +1,6 @@
 body {
-    background-color: #fdf7f7
+    background-color: #fdf7f7;
+    height: 100%
 }
 
 nav {
@@ -41,7 +42,7 @@ nav {
     background-color: white;
     margin-top: 20px;
     border-radius: 8px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
@@ -123,4 +124,24 @@ input {
     background-color: white;
     background-size: 100%;
     transition: background 0s;
+}
+
+.fab {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 15px
+}
+
+.fab button {
+    border: none;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff5063;
+}
+
+.fab:focus {
+    border: none
 }

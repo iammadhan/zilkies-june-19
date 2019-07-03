@@ -6,12 +6,13 @@
     <title>Table</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
     <nav>
-        <h1>Table</h1>
+        <h1>Student Marks</h1>
     </nav>
 
     <section class="container">
@@ -33,7 +34,7 @@
             </div>
         </div>
 
-        <div class="form-card">
+        <div id="form" class="form-card">
             <form>
                 <div class="input-sec">
                     <input type="text" name="regNo" placeholder="Register No.">
@@ -51,6 +52,12 @@
             </form>
         </div>
     </section>
+
+    <div class="fab">
+        <button onclick="fab()" class="ripple">
+            <i class="material-icons">description</i>
+        </button>
+    </div>
 
     <script src="script.js"></script>
 
