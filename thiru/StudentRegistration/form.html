@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <div class="form" id="form-wrapper">
+        <form id="form">
+            <div class="form-group">
+                <label>Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label>Registration Number</label><br>
+                <input type="text" name="regno" id="regno" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label>Grade</label><br>
+                <input type="text" name="grade" id="grade" placeholder="" required="required">
+            </div>
+            <div class="form-group">
+                <label>Maths</label><br>
+                <input type="text" name="maths" id="maths" placeholder="" pattern="\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label>English</label><br>
+                <input type="text" name="english" id="english" placeholder="" pattern="\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label>Hindi</label><br>
+                <input type="text" name="hindi" id="hindi" placeholder="" pattern="\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label>Science</label><br>
+                <input type="text" name="science" id="science" placeholder="" pattern="\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label>Social</label><br>
+                <input type="text" name="social" id="social" placeholder="" pattern="\d{2}" required>
+            </div>
+            <input name="regbutton" id="register" onclick="addRow()" type="button" class="button " value="Register " />
+        </form>
+    </div>
+    <div class="records" id="records">
+        <h2>Records</h2>
+        <table class="table" id="table">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Registration</th>
+                <th>Grade</th>
+                <th>Maths</th>
+                <th>English</th>
+                <th>Hindi</th>
+                <th>Science</th>
+                <th>Social</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="form.js "></script>
+</body>
+
+</html>
