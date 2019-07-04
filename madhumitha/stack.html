@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>stack</title>
+</head>
+<style>
+    .list {
+        color: black;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #shift {
+        margin-top: 20px;
+        display: none;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        background-color: rgb(235, 180, 227);
+    }
+
+    #add-button {
+        display: flex;
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        background-color: antiquewhite;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="button"><button id="add-button" onclick="add();">Add</button></div>
+    <div class="list"></div>
+    <div class="button"><button id="shift" onclick="ShiftRow();">Shift</button></div>
+</body>
+<script>
+    var count = 1;
+    var parent = document.querySelector(".list");
+
+    function add() {
+        document.getElementById("shift").style.display = "none";
+        var div = document.createElement("div");
+        div.style.backgroundColor = "lightpink";
+        div.style.width = "100px";
+        div.style.height = "50px";
+        div.style.textAlign = "center";
+        div.style.border = "2px solid black";
+        div.innerHTML = count++;
+        div.className = "element";
+        parent.append(div);
+        if (count == 6) {
+            document.getElementById("add-button").style.display = "none";
+            document.getElementById("shift").style.display = "block";
+        }
+    }
+
+    function ShiftRow() {
+        var x = document.querySelector(".list");
+        var first = x.children[0];
+        var last = x.children[4];
+        x.insertBefore(last, first);
+    }
+</script>
+</html>
