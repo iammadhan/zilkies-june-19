@@ -1,14 +1,14 @@
 
 function logic() {
     var click = n()
-    if (click < 10) {
-        var node = document.getElementById("left-list").firstChild
+    if (click < 5) {
+        var node = document.getElementById("left-list").firstElementChild
         var list = document.getElementById("right-list")
         list.insertBefore(node, list.childNodes[0])
         click++;
     } else {
         var currentList = document.getElementById("right-list")
-        var nodeCurr = currentList.lastChild
+        var nodeCurr = currentList.lastElementChild
         currentList.style.backgroundColor = "lightyellow"
         currentList.style.borderRadius = "8px"
         currentList.style.boxShadow = "0 2px 2px 0 rgba(0, 0, 0, .14)"
