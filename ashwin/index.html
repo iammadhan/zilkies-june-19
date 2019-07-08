@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Image
+    </title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 500px
+    }
+
+    .image {
+        width: 550px;
+        height: 350px;
+    }
+
+    button {
+        width: 100px;
+        height: 37px;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: coral;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="image">
+        <img width="100%" height="100%" src="http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg" id="image"
+            alt="">
+    </div>
+
+    <button onclick="changeLogic()">
+        Change
+    </button>
+
+    <script>
+        function changeLogic() {
+            
+            var urls = [
+                "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+                "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+                "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+            ]
+
+            var index = (Math.floor(Math.random() * 3) + 1) - 1
+
+            document.getElementById("image").src = urls[index]            
+
+        }
+    </script>
+
+</body>
+
+</html>
