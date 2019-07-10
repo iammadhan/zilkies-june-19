@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-registration">
+    <div class="registration-wrapper">
+
+        <div class="registration-form">
+            <h2>Registeration</h2>
+            <form>
+                <div class="form-element">
+                    <label>User Id</label><br>
+                    <input type="number" name="user-id" id="user-id">
+                </div>
+                <div class="form-element">
+                    <label>Firstname</label><br>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <div class="form-element">
+                    <label>Lastname</label><br>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <div class="form-element">
+                    <label>Password</label><br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-element">
+                    <label>Role</label><br>
+                    <select name="role" id="role">
+                        <option value="Manager">Manager</option>
+                        <option value="Consultant">Consultant</option>
+                        <option value="Associate Consultant">Associate Consultant</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+                <button type="button" class="button" id="submit-button" onclick="register()">Register</button>
+            </form>
+            <div>
+                <a class="login" href="login.html">Already Registered?Please Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="registration.js" defer></script>
+</body>
+
+</html>
