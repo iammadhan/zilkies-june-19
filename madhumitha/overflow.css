@@ -1,0 +1,49 @@
+header, footer, .hidden, .fits-content, .scroll {
+    border: 1px solid black;
+    margin: 20px 20px 10px 20px;
+}
+header,
+footer {
+    
+    height: 40px;
+}
+
+.hidden,
+.fits-content {
+    padding-left: 5px;
+}
+
+.hidden {
+    height: 30px;
+    overflow: hidden;   
+}
+
+.fits-content {
+    padding-right: 5px;
+    overflow: visible;
+    height: auto;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 20px;
+    padding: 10px;
+}
+
+.main {
+    height: 330px;
+    border: 2px solid black;
+    padding: 2px;
+    width: 850px;
+}
+
+.headerText,
+.footerText {
+    left: 8px;
+    bottom: 8px;
+    position: relative;
+}
+
+.text {
+    margin: 5px 0px;
+}
