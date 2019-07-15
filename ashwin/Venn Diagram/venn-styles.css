@@ -1,0 +1,33 @@
+
+body {
+    width: 420px;
+    height: 360px;
+    margin: auto;
+    margin-top: 180px
+}
+
+section {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-left: 60px
+}
+
+.circle1 {
+    background-color: #90ee90;
+    left: 200px;
+}
+
+.circle2 {
+    background-color: #ffa500;
+    position: relative;
+    left: 125px;
+    bottom: 150px;
+}
+
+.circle3 {
+    background-color: #d87093;
+    position: relative;
+    left: 60px;
+    bottom: 205px;
+}
