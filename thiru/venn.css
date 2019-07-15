@@ -20,11 +20,9 @@
 }
 
 .circle {
-    pointer-events: auto;
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    pointer-events: none;
     position: absolute;
     opacity: 0.5;
 }
