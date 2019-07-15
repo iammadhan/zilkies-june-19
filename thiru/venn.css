@@ -1,0 +1,42 @@
+.circle.circle1 {
+    left: 0px;
+    top: 0px;
+    background-color: lightgreen;
+    border: solid green;
+}
+
+.circle.circle2 {
+    left: 170px;
+    top: 0px;
+    border: solid yellow;
+    background-color: #f9e79f;
+}
+
+.circle.circle3 {
+    left: 85px;
+    top: 150px;
+    background-color: #f5b7b1;
+    border: solid red;
+}
+
+.circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 415px;
+    height: 400px;
+}
