@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        DivAndSpan
+    </title>
+    <style>
+        body {
+            position: absolute;
+            width: 60%;
+            height: 68%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 4px solid #000000;
+        }
+
+        .main-section {
+            position: relative;
+            width: 500px;
+            margin: auto;
+            top: 25px;
+        }
+
+        header, footer {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1%;
+            height: 40px;
+            border: 2px solid black;
+        }
+        header {
+            text-align: left;  
+        }
+
+        footer {
+            margin-top: 2%;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .first-div, .second-div, .third-div {
+            position: relative;
+            box-sizing: border-box;
+            padding: 1%;
+            margin-top: 2%;
+            border: 2px solid black;
+        }
+
+        .second-div {            
+            height: 83px;
+            overflow: hidden;
+        }
+
+        .third-div {
+            height: 83px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-section">
+        <header>
+            Header
+        </header>
+        <div class="first-div">
+            <span>Fit to Content - </span>The CSS box model is the foundation of layout on the Web — each
+            element is represented as a rectangular box, with the box's
+            content, padding, border, and margin built up around one another
+            like the layers of an onion.
+        </div>
+        <div class="second-div">
+            <span>Overflow Hidden - </span>The CSS box model is the foundation of layout on the Web — each
+            element is represented as a rectangular box, with the box's
+            content, padding, border, and margin built up around one another
+            like the layers of an onion.The element is represented as a rectangular box, with the box's
+            content, padding, border, and margin built up around one another
+            like the layers of an onion.
+        </div>
+        <div class="third-div">
+            <span>Overflow Scroll - </span>The CSS box model is the foundation of layout on the Web — each
+            element is represented as a rectangular box, with the box's
+            content, padding, border, and margin built up around one another
+            like the layers of an onion.
+        </div>
+        <footer>
+            Footer </footer>
+    </div>
+
+    </div>
+</body>
+
+</html>
