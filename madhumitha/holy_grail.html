@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html>
 <!--using inline block-->
+
 <head>
 
     <title>box layout</title>
 </head>
 <style>
-    .header,
-    .footer {
-        display: block;
-        text-align: center;
-       font-size: 25px;
+    header,
+    footer,
+    .sidebar1,
+    .sidebar2,
+    .sidebar3,
+    .article {
         background-color: grey;
+        text-align: center;
+
+    }
+
+    header,
+    footer {
+        display: block;
+        font-size: 25px;
         width: 95%;
         margin-top: 10px;
         padding: 5px;
     }
 
-    .sidebar1 {
+    .common {
         height: 200px;
+        display: inline-block;
         margin-top: 10px;
         font-size: 40px;
+    }
+
+    .side {
         width: 25%;
-        text-align: center;
-        display: inline-block;
     }
 
     .sidebar2 {
-
         margin-right: 10px;
-        height: 200px;
-        font-size: 40px;
-
-        width: 25%;
-        margin-top: 10px;
-        text-align: center;
-        display: inline-block;
     }
 
     .article {
-
-        height: 200px;
-        font-size: 40px;
         width: 45%;
 
-        display: inline-block;
-       
-        margin-top: 10px;
-        text-align: center;
-        
-        background-color: grey;
-    }
-
-    .sidebar1,
-    .sidebar2 {
-
-        background-color: grey;
     }
 </style>
 
 <body>
     <div>
-        <div class="header">
+        <header>
             <h5>Header</h5>
-        </div>
+        </header>
         <div class="middle">
-            <div class="sidebar1">
+            <div class="sidebar1 side common">
                 <h5>Sidebar 1</h5>
             </div>
-            <div class="article">
+            <div class="article common">
                 <h5>Article</h5>
             </div>
-            <div class="sidebar2">
+            <div class="sidebar2 side common">
                 <h5>Sidebar 2</h5>
             </div>
         </div>
-        <div class="footer">
+        <footer class="footer">
             <h5>Footer</h5>
-        </div>
+        </footer>
     </div>
 </body>
 
