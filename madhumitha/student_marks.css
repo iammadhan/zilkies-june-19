@@ -1,4 +1,3 @@
-
 .wrapper {
 
     margin-left: 20px;
@@ -16,7 +15,13 @@ h1 {
     justify-content: center;
     margin-bottom: 40px;
 }
-
+button{
+    border: 1px solid black;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
 input[type="text"] {
     width: 150px;
 }
