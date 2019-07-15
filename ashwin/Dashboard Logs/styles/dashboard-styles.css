@@ -1,0 +1,213 @@
+body {
+    background-color: #fdf7f7;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 64px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: white;
+    position: fixed
+}
+
+nav h1 {
+    padding: 10px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ff5063;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container {
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 58px
+}
+
+.table-card {
+    width: 90%;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+    margin-top: 20px;
+    overflow-x: auto;
+    margin-bottom: 20px
+        /* border: 1px solid pink */
+}
+
+.form-card {
+    width: 85%;
+    height: 150px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.student-table {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid pink; */
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 1px solid gray; */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold
+}
+
+tr:nth-child(n) {
+    background-color: white;
+}
+
+form {
+    width: 70%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.submit-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-sec input {
+    width: 100px;
+    background-color: #ff5064;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .add-sec {
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    align-items: center
+} */
+
+#nOfClicks {
+    display: none
+}
+
+.add-sec input {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px
+}
+
+.add-sec input {
+    background-color: #ff5064;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-sec button {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.add-sec button {
+    background-color: #ff5064;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none
+}
+
+input {
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #ff5063 radial-gradient(circle, transparent 1%, #ff5063 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: white;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.fab {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 15px;
+    outline: none
+}
+
+.fab button {
+    border: none;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff5063;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.fab:focus {
+    border: none
+}
+
+th {
+    cursor: pointer
+}

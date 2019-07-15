@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/login-styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>LOGIN</h1>
+    </nav>
+
+    <section class="container">
+
+        <form>
+            <div class="name-input">
+
+                <div class="text-input">
+                    <input id="username" name="username" tabindex="3" class="input-text" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="input-label">USERNAME</label>
+                </div>
+
+            </div>
+            <div class="password-input">
+
+                <div class="text-input">
+                    <input id="password" name="password" tabindex="4" class="input-text" type="password" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="input-label">PASSWORD</label>
+                </div>
+            </div>
+
+            <div class="login-button">
+                <button onclick="login()" tabindex="6" class="login ripple">
+                    LOGIN
+                </button>
+            </div>
+            <a href="../screens/register.html">Don't have an account yet?</a>
+        </form>
+    </section>
+
+    <script src="../scripts/login-scripts.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/register-styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>REGISTER</h1>
+    </nav>
+
+    <section class="container">
+
+        <form>
+
+            <div class="name-input">
+                <div class="text-input">
+                    <input name="username" tabindex="3" class="input-text" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="input-label">USERNAME</label>
+                </div>
+            </div>
+
+            <div class="password-input">
+                <div class="text-input">
+                    <input name="password" tabindex="4" class="input-text" type="password" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="input-label">PASSWORD</label>
+                </div>
+            </div>
+
+            <div class="name-input">
+                <div class="text-input">
+                    <input name="role" tabindex="4" class="input-text" type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="input-label">ROLE</label>
+                </div>
+            </div>
+
+            <div class="login-button">
+                <button onclick="register(this.form)" tabindex="6" class="login ripple">
+                    REGISTER
+                </button>
+            </div>
+
+            <a href="../screens/login.html">Already have an account?</a>
+
+        </form>
+    </section>
+
+    <script src="../scripts/register-scripts.js">
+    </script>
+
+</body>
+
+</html>
