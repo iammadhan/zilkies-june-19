@@ -76,9 +76,11 @@ img {
     font-weight: bold;
     margin-left: 20px;
 }
-p{
+
+p {
     line-height: 25px;
 }
+
 .display-kra {
     width: 90%;
     margin-top: 20px;
@@ -93,7 +95,7 @@ p{
     text-align: center;
     display: flex;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -113,9 +115,7 @@ p{
 }
 
 .shadow {
-
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .circle {
@@ -154,14 +154,12 @@ p{
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
 }
 
 .kra-data {
     font-size: 15px;
     max-width: 300px;
-
 }
 
 .self-gain {
@@ -173,7 +171,6 @@ p{
     color: #666666;
     min-width: 300px;
     padding: 15px;
-
 }
 
 textarea {
