@@ -15,11 +15,6 @@ footer {
     margin: auto
 }
 
-.header {
-    margin-top: 38px;
-    height: 40px;
-}
-
 .section1 {
     margin-top: 30px;
     height: auto;
@@ -35,12 +30,6 @@ footer {
     margin-top: 30px;
     height: 50px;
     overflow: scroll;
-}
-
-.footer {
-    margin-top: 28px;
-    height: 40px;
-    margin-bottom: 50px
 }
 
 p {
