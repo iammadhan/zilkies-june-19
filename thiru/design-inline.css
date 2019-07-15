@@ -1,4 +1,4 @@
-.sidebar-1 {
+.sidebar {
     width: 24%;
     text-align: center;
     border: 2px solid black;
@@ -11,17 +11,6 @@
 
 article {
     width: 50%;
-    text-align: center;
-    border: 2px solid black;
-    height: 57%;
-    box-sizing: border-box;
-    padding: 40px;
-    background-color: gray;
-    display: inline-block;
-}
-
-.sidebar-2 {
-    width: 24%;
     text-align: center;
     border: 2px solid black;
     height: 57%;
