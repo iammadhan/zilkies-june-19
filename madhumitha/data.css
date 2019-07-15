@@ -1,0 +1,45 @@
+.sidebar1,
+.sidebar2,
+header,
+footer,
+.article {
+    background-color: grey;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header,
+footer {
+    display: block;
+    font-size: 25px;
+    width: 95%;
+    padding: 5px;
+}
+
+footer {
+    margin-top: 220px;
+}
+
+.sidebar1,
+.sidebar2,
+.article {
+    height: 200px;
+    font-size: 40px;
+    float: left;
+}
+
+.sidebar1,
+.sidebar2 {
+    width: 25%;
+    margin-right: 5px;
+
+}
+
+.middle {
+    margin-bottom: 40px;
+}
+
+.article {
+    margin-right: 5px;
+    width: 45%;
+}
