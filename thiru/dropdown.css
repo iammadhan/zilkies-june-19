@@ -1,4 +1,4 @@
-.nav {
+nav {
     background: black;
     color: white;
     /*! overflow: hidden; */
@@ -44,12 +44,7 @@
     display: block;
 }
 
-.items li:hover {
-    color: black;
-    background: white;
-}
-
-.menu:hover {
+.items li:hover,.menu:hover {
     color: black;
     background: white;
 }
