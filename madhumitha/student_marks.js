@@ -9,9 +9,9 @@ function add() {
     var subj4 = document.getElementById('subj4').value;
     var subj5 = document.getElementById('subj5').value;
 
-
+if(name && phone && email && subj1 && subj2 && subj3 && subj4 && subj5)
     // 0--- first table
-    var table = document.getElementsByTagName('table')[0];
+    {var table = document.getElementsByTagName('table')[0];
 
     // table.rows.length-- add in the end
     var newRow = table.insertRow(table.rows.length);
@@ -35,9 +35,10 @@ function add() {
     cel6.innerHTML = subj3;
     cel7.innerHTML = subj4;
     cel8.innerHTML = subj5;
- 
-
-
+}
+else{
+    alert("enter all details");
+}
     document.getElementById("name").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("email").value = "";
