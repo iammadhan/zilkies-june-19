@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+</body>
+<img src="" alt="image" id="image">
+<button class="button" onclick="clickHandle()">Click</button>
+
+<script src="" async defer></script>
+
+</html>
+<style>
+    img {
+        display: none;
+    }
+</style>
+<script>
+    function clickHandle() {
+        let img = ["http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+            "https://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+            "https://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+        ];
+        let number = Math.floor((Math.random() * 100) % 3);
+        let image = document.getElementById("image");
+
+        image.src = img[number];
+        image.style.display = "block";
+    }
+</script>
