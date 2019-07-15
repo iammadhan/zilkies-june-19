@@ -1,11 +1,18 @@
 let counter = 0;
-function showTable() {
 
-}
 function addData() {
     let students = document.querySelectorAll(".student");
     let table = document.getElementById("myTable");
+
+    for (let j = 0; j < students.length; j++) {
+        if(students[j].value === "") {
+            alert("Enter input");
+            return false;
+        }
+    } 
+
     let row = table.insertRow();
+
     let cell = row.insertCell(0);
     cell.innerHTML = ++counter;
 
@@ -14,6 +21,5 @@ function addData() {
         cell.innerHTML = students[i].value;
         students[i].value = "";
     }
-    
-    
+
 }
