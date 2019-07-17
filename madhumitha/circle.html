@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <title>circle</title>
+    <style>
+        .common {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .circles {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .dot1 {
+            background-color: green;
+        }
+
+        .dot2 {
+            background-color: yellow;
+            left: 130px;
+        }
+
+        .dot3 {
+            top: 100px;
+            left: 40px;
+            background-color: rgb(199, 11, 105);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circles main common">
+
+        <div class="dot1 common"></div>
+        <div class="dot2 common"></div>
+        <div class="dot3 common"></div>
+
+    </div>
+</body>
+
+</html>
