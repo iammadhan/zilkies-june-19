@@ -54,8 +54,8 @@ body {
 
 .burger-button img {
     width: 50%;
-    margin-top: 7px;
-    margin-left: 10px;
+    margin: 7px 0 0 10px;
+    /* margin-left: 10px; */
 }
 
 .modile-header {
@@ -97,8 +97,8 @@ body {
     display: inline-block;
     background: white;
     border-radius: 50%;
-    margin-top: 15px;
-    margin-right: 23px;
+    margin: 15px 23px 0 0;
+    /* margin-right: 23px; */
 }
 
 .profile-name {
@@ -139,7 +139,7 @@ body {
     padding: 7px;
 }
 
-.nav-wrapper {
+nav {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -269,7 +269,7 @@ figcaption {
     .tab {
         display: block;
     }
-    .nav-wrapper {
+    nav {
         padding: unset;
     }
     .nav-middle li {
@@ -328,7 +328,7 @@ figcaption {
     header {
         position: unset;
     }
-    .nav-wrapper {
+    nav {
         margin: unset;
         padding: 20px 0;
         align-items: center;
