@@ -6,10 +6,14 @@
 </head>
 <style>
   body {
-    background-color: deepskyblue;
+    background-color: #45BEF7;
     margin-left: 20px;
   }
-  .Timeframe, .ProjectType, .personalDetails, .description {
+
+  .Timeframe,
+  .ProjectType,
+  .personalDetails,
+  .description {
     color: white;
   }
 
@@ -33,16 +37,18 @@
     width: 166px;
   }
 
+  .heading {
+    font-size: 20px;
+  }
+
   .description {
 
     min-height: 60px;
     max-height: 160px;
     float: right;
-    margin-right: 400px;
     height: 150px;
     position: relative;
-    margin-bottom: 400px;
-    margin-top: -260px;
+    margin: -190px 400px 400px 0px;
 
   }
 
@@ -52,71 +58,97 @@
 
   }
 
+  .wrapper {
+    margin-top: 30px;
+  }
+
   .submit-class {
     border-radius: 20px;
     height: 40px;
+    margin: 80px 0px 0px 390px;
     width: 130px;
-    background-color: deepskyblue;
+    background-color: #45BEF7;
     border: 1px solid white;
     color: white;
   }
 
-  h1 {
+  .main_heading {
     color: white;
-  }
-
-  .submit {
-    margin-top: 80px;
-    margin-left: 390px;
+    font-size: 30px;
 
   }
 </style>
 
 <body>
-  <h1>Let's craft your product.</h1>
-  <form action="/form.html"></form>
-  <div class="first">
-    <div class="Timeframe">
+  <label class="main_heading" for="heading">Let's craft your product.</label>
 
-      <h4>Timeframe</h4>
-      <div> <input type="radio" name="months" value="one_month" checked> 1 month</div>
-      <div><input type="radio" name="months" value="two_months"> 2-3 months</div>
-      <div> <input type="radio" name="months" value="four_months"> 4+ months</div>
+  <div class="wrapper">
+    <div class="first">
+      <div class="Timeframe">
+        <label class="heading" for="timeframe">Timeframe</label>
+
+
+        <div>
+          <input type="radio" id="one_month" name="months" value="one_month" checked>
+          1 month
+        </div>
+        <div>
+          <input type="radio" id="two_months" name="months" value="two_months">
+          2-3 months
+        </div>
+        <div>
+          <input type="radio" id="four_months" name="months" value="four_months">
+          4+ months
+        </div>
+      </div>
+      <div class="ProjectType">
+        <label class="heading" for="projectType">Project type</label>
+
+
+        <div>
+          <input type="checkbox" id="Desktop" class="check" name="project" value="Desktop"> Desktop
+        </div>
+        <div>
+          <input type="checkbox" id="Web" name="project" class="check" value="Web">Web
+        </div>
+        <div>
+          <input type="checkbox" id="Mobile" name="project" class="check" value="Mobile">Mobile
+        </div>
+        <div>
+          <input type="checkbox" id="Other" name="project" class="check" value="Other">Other
+        </div>
+
+      </div>
     </div>
-    <div class="ProjectType">
-      <h4>Project type</h4>
+    <div class="personalDetails">
+      <label class="heading" for="personalDetails">Personal details</label>
 
-      <div><input type="checkbox" name="project" value="Desktop"> Desktop</div>
-      <div><input type="checkbox" name="project" value="Web">Web</div>
-      <div> <input type="checkbox" name="project" value="Mobile">Mobile</div>
-      <div> <input type="checkbox" name="project" value="Other">Other</div>
+      <div class="option">Name:
+        <input type="text" id="" name="Name" placeholder="Name"></div>
+      <div class="option">Company:
+        <input type="text" id="" name="Company" placeholder="Company"></div>
+      <div class="option">Email:
+        <input type="text" id="" name="Email" placeholder="Email"></div>
+      <div class="option">Budget:
 
+        <select name="budget">
+          <option value=""></option>
+          <option value="10-20">10-20k</option>
+          <option value="20-30">20-30k</option>
+          <option value="30-40">30-40k</option>
+          <option value="40-50">40-50k</option>
+        </select>
+
+      </div>
     </div>
-  </div>
-  <div class="personalDetails">
-    <h4>Personal details</h4>
-    <div class="option">Name: <input type="text" name="Name" placeholder="Name"></div>
-    <div class="option">Company: <input type="text" name="Company" placeholder="Company"></div>
-    <div class="option">Email:<input type="text" name="Email" placeholder="Email"></div>
-    <div class="option">Budget:
-
-      <select name="budget">
-        <option value=""></option>
-        <option value="10-20">10-20k</option>
-        <option value="20-30">20-30k</option>
-        <option value="30-40">30-40k</option>
-        <option value="40-50">40-50k</option>
-      </select>
-
-    </div>
-  </div>
-  <div class="description">
-    <h4> Tell us about your project:</h4>
-    <textarea rows="14" cols="40" placeholder="Tell us about your project">
+    <div class="description">
+      <div><label class="heading" for="description">Tell us about your project:</label></div>
+      <textarea rows="14" cols="40" placeholder="Tell us about your project">
 
     </textarea>
+    </div>
   </div>
-  <div class="submit">
+  <div>
     <input type="submit" class="submit-class" value="Send Inquiry"></input>
   </div>
 </body>
