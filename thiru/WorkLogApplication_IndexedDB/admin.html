@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-body">
+    <header>
+        <div class="profile"></div>
+        <div class="welcome" id="welcome"></div>
+        <div class="logout-container">
+            <button onclick="logout()" class="logout">Logout</button>
+        </div>
+    </header>
+    <div class="admin-records">
+        <div class="records" id="records">
+            <h2>Records</h2>
+            <table class="table" id="table">
+                <tr>
+                    <th onclick="sortById()" class="header-id">Id<i class="fa fa-sort-up"></i></th>
+                    <th>Name</th>
+                    <th>Hours</th>
+                    <th>Work Description</th>
+                    <th onclick="sortByDate()" class="header-date">Work Date<i class="fa fa-sort-up"></i></th>
+                    <th>Remaining Hours</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="admin.js" defer></script>
+</body>
+<script>
+    let request = window.indexedDB.open("WorkLog", 2),
+        db, store, tx;
+
+    request.onerror = function(event) {
+        console.log("Error :" + event.target.error);
+    }
+
+    request.onsuccess = function(event) {
+        db = request.result;
+        tx = db.transaction("currentUser", "readonly");
+        store = tx.objectStore("currentUser");
+
+        let user = store.getAll();
+        user.onsuccess = function() {
+            userId = user.result[0]["userId"];
+            userName = user.result[0]["userName"];
+            document.getElementById("welcome").innerHTML = "Welcome " + userName + "!!!";
+        }
+    }
+</script>
+
+</html>

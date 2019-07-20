@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+    <div class="login-wrapper">
+        <div class="login-inner">
+            <div class="left">
+                <div class="image-container">
+                    <img class="login-image" src="login.jpg" alt="login" />
+                </div>
+                <div class="quote">
+                    <p>"Time = life; therefore, waste your time and waste of your life, or master your time and master your life."</p>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Enter user credentials to login</h3>
+                <form class="login-form" onsubmit="return false;">
+                    <div class="login-form-element">
+                        <!-- <label></label><br> -->
+                        <input type="number" name="user-id" id="user-id" placeholder="Username">
+                    </div>
+                    <div class="login-form-element">
+                        <!-- <label>Pass</label><br> -->
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="button" id="submit-button" onclick="login()">Login</button>
+                </form>
+                <div>
+                    <a class="login" href="registration.html">Sign Up</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="login.js" defer></script>
+</body>
+
+</html>
