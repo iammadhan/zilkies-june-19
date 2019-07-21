@@ -1,0 +1,49 @@
+body {
+    border: 5px solid #000000;
+    width: 44%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+a {
+    display: inline-block;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:focus,
+a:hover,
+i:hover {
+    color: #808080
+}
+
+nav {
+    background-color: #000000
+}
+
+.drop-down {
+    display: inline-block;
+}
+
+.drop-down:hover .drop-menu {
+    display: block
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+}
+
+.drop-menu a {
+    display: block;
+}
+
+i {
+    color: #ffffff;
+    top: 5px;
+    position: relative;
+}
