@@ -1,0 +1,50 @@
+nav {
+    background: black;
+    color: white;
+    /*! overflow: hidden; */
+}
+
+.menu {
+    display: inline-block;
+    padding: 30px;
+}
+
+.menu.services::after {
+    content: '\02C7';
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+    font-size: 25px;
+}
+
+.menu.services {
+    position: relative;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    padding: 19px 0;
+    background: black;
+    color: white;
+    width: 170px;
+    top: 79px;
+    left: 0px;
+}
+
+.items li {
+    list-style: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.menu.services:hover .items {
+    display: block;
+}
+
+.items li:hover,.menu:hover {
+    color: black;
+    background: white;
+}

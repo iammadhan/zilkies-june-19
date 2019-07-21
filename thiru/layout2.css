@@ -1,0 +1,9 @@
+.image {
+    width: 140px;
+    float: right;
+    clear: right;
+}
+
+.wrapper {
+    width: 50%;
+}

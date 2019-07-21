@@ -1,0 +1,51 @@
+.sidebar {
+    width: 24%;
+    text-align: center;
+    border: 2px solid black;
+    height: 57%;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: gray;
+    display: inline-block;
+}
+
+article {
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    height: 57%;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: gray;
+    display: inline-block;
+}
+
+header {
+    margin: 1% auto;
+    border: 2px solid black;
+    height: 18%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: gray;
+}
+
+body {
+    height: 97vh;
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+}
+
+footer {
+    border: 2px solid black;
+    height: 18%;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 1% 0;
+    background-color: gray;
+}
