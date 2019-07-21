@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Form</title>
+</head>
+<style>
+  body {
+    background-color: #45BEF7;
+    margin-left: 20px;
+  }
+
+  .Timeframe,
+  .ProjectType,
+  .personalDetails,
+  .description {
+    color: white;
+  }
+
+  .first {
+    display: inline-block;
+    margin-right: 10%;
+  }
+
+  .personalDetails {
+    float: right;
+    margin-right: 70%;
+    height: 150px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  select {
+    height: 23px;
+    width: 166px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .description {
+
+    min-height: 60px;
+    max-height: 160px;
+    float: right;
+    height: 150px;
+    position: relative;
+    margin: -190px 400px 400px 0px;
+
+  }
+
+  .option {
+    width: 100px;
+    padding: 5px;
+
+  }
+
+  .wrapper {
+    margin-top: 30px;
+  }
+
+  .submit-class {
+    border-radius: 20px;
+    height: 40px;
+    margin: 80px 0px 0px 390px;
+    width: 130px;
+    background-color: #45BEF7;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .main_heading {
+    color: white;
+    font-size: 30px;
+
+  }
+</style>
+
+<body>
+  <label class="main_heading" for="heading">Let's craft your product.</label>
+
+  <div class="wrapper">
+    <div class="first">
+      <div class="Timeframe">
+        <label class="heading" for="timeframe">Timeframe</label>
+
+
+        <div>
+          <input type="radio" id="one_month" name="months" value="one_month" checked>
+          1 month
+        </div>
+        <div>
+          <input type="radio" id="two_months" name="months" value="two_months">
+          2-3 months
+        </div>
+        <div>
+          <input type="radio" id="four_months" name="months" value="four_months">
+          4+ months
+        </div>
+      </div>
+      <div class="ProjectType">
+        <label class="heading" for="projectType">Project type</label>
+
+
+        <div>
+          <input type="checkbox" id="Desktop" class="check" name="project" value="Desktop"> Desktop
+        </div>
+        <div>
+          <input type="checkbox" id="Web" name="project" class="check" value="Web">Web
+        </div>
+        <div>
+          <input type="checkbox" id="Mobile" name="project" class="check" value="Mobile">Mobile
+        </div>
+        <div>
+          <input type="checkbox" id="Other" name="project" class="check" value="Other">Other
+        </div>
+
+      </div>
+    </div>
+    <div class="personalDetails">
+      <label class="heading" for="personalDetails">Personal details</label>
+
+      <div class="option">Name:
+        <input type="text" id="" name="Name" placeholder="Name"></div>
+      <div class="option">Company:
+        <input type="text" id="" name="Company" placeholder="Company"></div>
+      <div class="option">Email:
+        <input type="text" id="" name="Email" placeholder="Email"></div>
+      <div class="option">Budget:
+
+        <select name="budget">
+          <option value=""></option>
+          <option value="10-20">10-20k</option>
+          <option value="20-30">20-30k</option>
+          <option value="30-40">30-40k</option>
+          <option value="40-50">40-50k</option>
+        </select>
+
+      </div>
+    </div>
+    <div class="description">
+      <div><label class="heading" for="description">Tell us about your project:</label></div>
+      <textarea rows="14" cols="40" placeholder="Tell us about your project">
+
+    </textarea>
+    </div>
+  </div>
+  <div>
+    <input type="submit" class="submit-class" value="Send Inquiry"></input>
+  </div>
+</body>
+
+</html>
