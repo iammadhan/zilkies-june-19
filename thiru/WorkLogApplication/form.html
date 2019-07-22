@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="form-body">
+    <header>
+        <div class="profile"></div>
+        <div class="welcome" id="welcome"></div>
+        <div class="logout-container">
+            <button onclick="logout()" class="logout">Logout</button>
+        </div>
+    </header>
+    <div class="form" id="form-wrapper">
+        <form id="form">
+            <h4>Fill form to log work.</h4>
+            <div class="form-group">
+                <label>Hours</label><br>
+                <input type="text" name="hours" id="hours" onkeyup="clearError()" placeholder="" min=1 max=8 pattern="[1-8]" title="Enter only number between 1 and 8">
+                <p class="error" id="error"> Please enter only numbers</p>
+            </div>
+            <div class="form-group">
+                <label>Work Description</label><br>
+                <textarea type="text" name="description" id="description" maxlength="50" placeholder=""></textarea>
+            </div>
+            <div class="form-group">
+                <label> Date of Work</label><br>
+                <input type="date" name="work-date" id="work-date">
+            </div>
+            <!-- <div class="form-group">
+                <label>Remaining Hours</label><br>
+                <input type="text" name="remaining-hours" id="remaining-hours" placeholder="" pattern="\d{2}" required>
+            </div> -->
+            <button type="button" class="button" id="submit-button" onclick="addRow()">Log Work</button>
+        </form>
+    </div>
+    <div class="records" id="records">
+        <h2>Records</h2>
+        <table class="table" id="table">
+            <tr>
+                <th>Entry Id</th>
+                <!-- <th>Name</th> -->
+                <th>Hours</th>
+                <th>Work Description</th>
+                <th>Work Data</th>
+                <th>Remaining Hours</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="form.js" defer></script>
+</body>
+<script>
+    let userId = localStorage.getItem('currentUserId');
+    let userName = localStorage.getItem('currentUserName');
+    document.getElementById("welcome").innerHTML = "Welcome " + userName + "!!!";
+</script>
+
+</html
