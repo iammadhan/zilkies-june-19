@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <title>HOME</title>
+</head>
+<body onload="create()">
+    <header class="title">
+        WORKLOG REGISTER
+    </header>
+    <section class="main-section">
+        <div class="circular-container" id="circular-container">
+            <a class="login" id="login">
+                <img src="images/login-avatar.jpg" alt="Login">
+                <span class="caption">Login</span>
+            </a>
+            <a class="register" href="register.html">
+                <img src="images/employee.png" alt="Register">
+                <span class="caption">Register</span>
+            </a>
+        </div>
+
+        <div class="container" id="container">
+
+            <div class="login-container">
+                <form class="login-form">
+                    <div class="heading">
+                        <img src="images/coder.png" alt="developer" />
+                    </div>
+
+                    <fieldset class="form-group">
+                        <input type="number" name="userid" id="userid">
+                        <label for="userid" title="User-ID"></label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input type="password" name="password" id="password">
+                        <label for="password" title="Password"></label>
+                    </fieldset>
+
+                    <div class="backup-links">
+                        <a href="#">Remember me</a>
+                        <a href="register.html">New User?</a>
+                    </div>
+
+                    <a onclick="loginValidation()" class="login-button" id="link" name="login">LOGIN</a>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

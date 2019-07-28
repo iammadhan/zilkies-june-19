@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <title>
+        User-Dashboard
+    </title>
+</head>
+
+<body onload="displayEntries()">
+    <header class="title">
+        <h2 id="greet"></h2>
+        <h1>Worklog Dashboard </h1>
+        <a onclick="clearSession()" href="index.html" class="logout">LOGOUT<a>
+    </header>
+    <section class="main-section">
+        <div class="display-table">
+            <h3>WORKLOG TABLE</h3>
+            <div class="center-button">
+                <button type="button" class="add" id="add" onclick="showTable()">
+                    Add Worklog</button>
+            </div>
+            <table id="myTable">
+                <tr>
+                    <th>Log-ID</th>
+                    <th>Work Description</th>
+                    <th>Date of Work</th>
+                    <th>Hour</th>
+                    <th>Remaining Hour</th>
+                    <th>Operations</th>
+                    <th>Operations</th>
+
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="data-form" id="data-form">
+            <h3>FORM</h3>
+            <form name="task">
+
+                <div class="input-box">
+                    <label for="work">Work Description </label>
+                    <input type="text" id="work" name="work" class="user">
+                </div>
+
+                <div class="input-box">
+                    <label for="date">Date of Work</label>
+                    <input type="date" id="date" name="date" class="user">
+                </div>
+                <div class="input-box">
+                    <label for="hour">Hour </label>
+                    <input type="number" id="hour" name="hour" class="user">
+                </div>
+                <div class="center-button">
+                    <button type="button" class="submit" id="submit" onclick="insertEntry()">
+                        Submit Data</button>
+                </div>
+
+                <div class="center-button">
+                    <button type="button" class="save" id="save" onclick="saveRow()">
+                        Save Data</button>
+                </div>
+                <div class="center-button">
+                    <button type="button" class="cancel" id="cancel" onclick="cancelChange()">
+                        Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
