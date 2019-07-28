@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/admin-dashboard.css" rel="stylesheet">
+    <script src="js/admin-dashboard.js"></script>
+    <title>
+        Admin-Dashboard
+    </title>
+
+</head>
+
+<body onload="displayAllEntries()">
+    <header class="title">
+        <h2>WELCOME ADMIN</h2>
+        <h1>Worklog Dashboard </h1>
+        <a onclick="clearSession()" href="index.html" class="logout">LOGOUT<a>
+    </header>
+    <section class="main-section">
+
+        <div class="display-table">
+            <h3>TABLE</h3>
+            <table id="myTable">
+                <tr>
+                    <th>#.NO</th>
+                    <th onclick="sortTable(1)" id="headerUID">User-ID</th>
+                    <th>User Name</th>
+                    <th>Log-Id</th>
+                    <th>Work Description</th>
+                    <th onclick="sortTable(5)" id="headerDate">Date of Work</th>
+                    <th>Hour</th>
+                    <th>Remaining Hour</th>
+                    <th>Created Timestamp</th>
+                    <th>Updated Timestamp</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="js/databasescript.js"></script>
+</body>
+
+</html>
