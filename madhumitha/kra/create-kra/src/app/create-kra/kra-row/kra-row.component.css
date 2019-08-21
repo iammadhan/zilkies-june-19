@@ -1,0 +1,59 @@
+.drag-cancel {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.way-forward-section {
+  margin-left: 60px;
+}
+
+.gyaan-content {
+  margin-left: 60px;
+}
+
+.self-gyaan-text {
+  width: 380px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.table-row {
+  color: #666666;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.display-number {
+
+  width: 110px;
+}
+
+.kra-data {
+
+  width: 330px;
+  font-size: 15px;
+  max-width: 330px;
+  margin-right: 30px;
+}
+
+.kra-desc {
+  border: 2px solid #666666;
+  border-radius: 5px;
+  align-content: left;
+  height: 80px;
+  text-align: left;
+  color: #666666;
+  min-width: 300px;
+  padding: 15px;
+}
+
+textarea {
+  resize: none;
+  max-width: 250px;
+  margin-right: 100px;
+  outline: none;
+}
