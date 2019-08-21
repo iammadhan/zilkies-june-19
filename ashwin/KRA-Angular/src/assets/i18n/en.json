@@ -1,0 +1,37 @@
+{
+    "login-component": {
+        "login": "LOGIN",
+        "email": "EMAIL",
+        "password": "PASSWORD",
+        "remember-me": "REMEMBER ME",
+        "forgot-password": "FORGOT PASSWORD",
+        "email-required": "Email is required.",
+        "password-required": "Password is required.",
+        "enter-a": "Enter a ",
+        "valid": "VALID "
+    },
+    "old-kra-component": {
+        "old-kra": "OLD KRA'S",
+        "filter": "FILTERS",
+        "mentee-name": "MENTEE NAME",
+        "from": "FROM",
+        "to": "TO",
+        "submit": "SUBMIT",
+        "kra-set": "KRA SET",
+        "year": "YEAR:",
+        "quarter": "QUARTER:",
+        "priority": "PRIORITY",
+        "kra": "KRA",
+        "self-gyaan": "SELF GYAAN",
+        "way-forward": "WAY FORWARD"
+    },
+    "set-password-component": {
+        "set-password": "SET PASSWORD",
+        "new-password": "NEW PASSWORD",
+        "confirm-password": "CONFIRM PASSWORD",
+        "submit": "SUBMIT"
+    },
+    "footer": {
+        "text": "2019 ZILKER TECHNOLOGY ALL RIGHTS RESERVED"
+    }
+}

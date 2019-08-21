@@ -1,0 +1,55 @@
+<section>
+  <div class="login-card">
+    <form id="form" class="form" (ngSubmit)="onSubmit(form)" #form="ngForm" class="login-form">
+      <div class="login-label">
+        {{ 'login-component.login' | translate }}
+      </div>
+      <div class="name-input">
+        <div class="text-input">
+          <input minlength="1" ngModel #email="ngModel" name="email" [pattern]="emailPattern" id="email" tabindex="4"
+            class="input-text" type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label [ngClass]="{'move-label': email.errors?.pattern}" class="input-label">{{ 'login-component.email' | translate }}</label>
+        </div>
+        <div *ngIf="email.touched && !email.valid">
+          <div class="error-div" *ngIf="email.errors.required">{{ 'login-component.email-required' | translate }}</div>
+          <div class="error-div" *ngIf="email.errors.pattern">{{ 'login-component.enter-a' | translate }}<strong>{{ 'login-component.valid' | translate }}</strong>{{ 'login-component.email' | translate }}</div>
+        </div>
+      </div>
+      <div class="password-input">
+        <div class="text-input">
+          <input ngModel #password="ngModel" minlength="8" maxlength="16" name="password" id="password"
+            [pattern]="passwordPattern" tabindex="4" class="input-text" type="password" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label [ngClass]="{'move-label': password.errors?.pattern}" class="input-label">{{ 'login-component.password' | translate }}</label>
+        </div>
+        <div *ngIf="password.touched && !password.valid">
+          <div class="error-div" *ngIf="password.errors.required">{{ 'login-component.password-required' | translate }}</div>
+          <div class="error-div" *ngIf="password.errors.minlength">Password must be atleast
+            {{ password.errors.minlength.requiredLength }} long.</div>
+          <div class="error-div" *ngIf="password.errors.pattern">Enter a <strong>VALID</strong> Password.</div>
+        </div>
+      </div>
+      <div class="remember-me-input">
+        <label>
+          <input tabindex="5" id="remember-me" type="checkbox" class="check-custom">
+          <span class="check-toggle"></span>
+        </label>
+        <label class="checkbox-label" for="remember-me">{{ 'login-component.remember-me' | translate }}</label>
+      </div>
+      <div class="login-button">
+        <button [disabled]="!form.form.valid" tabindex="6" class="login ripple">
+          {{ 'login-component.login' | translate }}
+        </button>
+      </div>
+      <div class="forgot-password">
+        <p tabindex="7">{{ 'login-component.forgot-password' | translate }}</p>
+      </div>
+    </form>
+    <div class="login-image">
+      <img width="100%" height="100%" src="assets/img/image-login.svg" alt="">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+footer {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%
+}
