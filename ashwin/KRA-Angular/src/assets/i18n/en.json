@@ -1,4 +1,13 @@
 {
+    "nav-bar-component": {
+        "my-home": "MY HOME",
+        "mentees": "MENTEES",
+        "notifications": "NOTIFICATIONS",
+        "old-kra": "OLD KRA",
+        "dummy-email": "ZILKERTECH@ZTECH.IO",
+        "logout": "LOGOUT",
+        "login": "LOGIN"
+    },
     "login-component": {
         "login": "LOGIN",
         "email": "EMAIL",
@@ -8,7 +17,9 @@
         "email-required": "Email is required.",
         "password-required": "Password is required.",
         "enter-a": "Enter a ",
-        "valid": "VALID "
+        "valid": "VALID ",
+        "password-must": "Password must be atleast",
+        "long": "long"
     },
     "old-kra-component": {
         "old-kra": "OLD KRA'S",
@@ -29,7 +40,14 @@
         "set-password": "SET PASSWORD",
         "new-password": "NEW PASSWORD",
         "confirm-password": "CONFIRM PASSWORD",
-        "submit": "SUBMIT"
+        "submit": "SUBMIT",
+        "password-required": "Password is required.",
+        "enter-a": "Enter a ",
+        "valid": "VALID ",
+        "must-have": "Password must be atleast",
+        "long": "long",
+        "password": "Password",
+        "password-constraints": "Password must contain max of 8 chars, a number, a special char and a uppercase letter."
     },
     "footer": {
         "text": "2019 ZILKER TECHNOLOGY ALL RIGHTS RESERVED"

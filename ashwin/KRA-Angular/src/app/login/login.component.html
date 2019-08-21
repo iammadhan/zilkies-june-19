@@ -10,11 +10,14 @@
             class="input-text" type="text" required>
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label [ngClass]="{'move-label': email.errors?.pattern}" class="input-label">{{ 'login-component.email' | translate }}</label>
+          <label [ngClass]="{'move-label': email.errors?.pattern}"
+            class="input-label">{{ 'login-component.email' | translate }}</label>
         </div>
         <div *ngIf="email.touched && !email.valid">
           <div class="error-div" *ngIf="email.errors.required">{{ 'login-component.email-required' | translate }}</div>
-          <div class="error-div" *ngIf="email.errors.pattern">{{ 'login-component.enter-a' | translate }}<strong>{{ 'login-component.valid' | translate }}</strong>{{ 'login-component.email' | translate }}</div>
+          <div class="error-div" *ngIf="email.errors.pattern">
+            {{ 'login-component.enter-a' | translate }}<strong>{{ 'login-component.valid' | translate }}</strong>{{ 'login-component.email' | translate }}
+          </div>
         </div>
       </div>
       <div class="password-input">
@@ -23,13 +26,17 @@
             [pattern]="passwordPattern" tabindex="4" class="input-text" type="password" required>
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label [ngClass]="{'move-label': password.errors?.pattern}" class="input-label">{{ 'login-component.password' | translate }}</label>
+          <label [ngClass]="{'move-label': password.errors?.pattern}"
+            class="input-label">{{ 'login-component.password' | translate }}</label>
         </div>
         <div *ngIf="password.touched && !password.valid">
-          <div class="error-div" *ngIf="password.errors.required">{{ 'login-component.password-required' | translate }}</div>
-          <div class="error-div" *ngIf="password.errors.minlength">Password must be atleast
-            {{ password.errors.minlength.requiredLength }} long.</div>
-          <div class="error-div" *ngIf="password.errors.pattern">Enter a <strong>VALID</strong> Password.</div>
+          <div class="error-div" *ngIf="password.errors.required">{{ 'login-component.password-required' | translate }}
+          </div>
+          <div class="error-div" *ngIf="password.errors.minlength">{{ 'login-component.password-must' | translate }}
+            {{ password.errors.minlength.requiredLength }} {{ 'login-component.long' | translate }}.</div>
+          <div class="error-div" *ngIf="password.errors.pattern">
+            {{ 'login-component.enter-a' | translate }}<strong>{{ 'login-component.valid' | translate }}</strong>
+            {{ 'login-component.password' | translate }}.</div>
         </div>
       </div>
       <div class="remember-me-input">

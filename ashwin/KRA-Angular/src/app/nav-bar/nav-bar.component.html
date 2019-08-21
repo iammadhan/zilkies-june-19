@@ -3,14 +3,14 @@
     <img src="assets/img/zt-logo.svg" class="image" alt="Zilker Technology">
   </div>
   <nav *ngIf="isLoggedIn" class="nav-links">
-    <a href="">MY HOME</a>
-    <a href="">MENTEES</a>
-    <a href="">NOTIFICATIONS</a>
-    <a href="">OLD KRA</a>
+    <a href="">{{ 'nav-bar-component.my-home' | translate }}</a>
+    <a href="">{{ 'nav-bar-component.mentees' | translate }}</a>
+    <a href="">{{ 'nav-bar-component.notifications' | translate }}</a>
+    <a href="">{{ 'nav-bar-component.old-kra' | translate }}</a>
   </nav>
   <div class="user-account">
-    <a *ngIf="isLoggedIn" class="user-mail" href="">ZILKERTECH@ZTECH.IO</a>
-    <a *ngIf="isLoggedIn" href="">LOGOUT</a>
-    <a href="">LOGIN</a>
+    <a *ngIf="isLoggedIn" class="user-mail" href="">{{ 'nav-bar-component.dummy-email' | translate }}</a>
+    <a *ngIf="isLoggedIn" href="">{{ 'nav-bar-component.logout' | translate }}</a>
+    <a href="">{{ 'nav-bar-component.login' | translate }}</a>
   </div>
 </header>
