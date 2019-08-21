@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+h2:hover,
+h3:hover {
+    color: #ff5063;
+}
+
+.title {
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 1px #666666;
+}
+
+.main-section {
+    margin: 10px 0px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    justify-content: space-around;
+}
+.stack-container{
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+    padding: 45px 40px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #f7f7f7;
+    box-shadow: 2px 5px 10px #666666;
+}
+.stack{
+    width: 150px;
+    height:400px;
+    border: 5px solid #5a0023;
+    display: flex;
+    flex-direction:column-reverse;
+    border-top: 0;
+}
+.box{
+    width:100%;
+    height:80px;
+    border:1px solid #fff;
+    box-sizing: border-box;
+    text-align:center;
+    padding:20px;
+}
+.box1 {
+    background-color:#ff0000;
+}
+.box2 {
+    background-color:#ffff00;
+}
+.box3 {
+    background-color:#008000;
+}
+.box4 {
+    background-color: #bc8f8f;
+}
+.box5 {
+    background-color: #ffd700;
+}
+.center-button {
+    width: 150px;
+    height:400px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;    
+}
+
+.submit {
+    background-color: #ececec;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    border: 2px solid #fff;
+}
+
+.submit:hover {
+    background-color: #ff5063;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+#note{
+    display: none;
+}
