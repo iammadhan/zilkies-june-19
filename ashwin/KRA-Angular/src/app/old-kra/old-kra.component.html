@@ -1,0 +1,118 @@
+<section class="container">
+  <div class="old-kra-card">
+    <div class="old-kra">
+      <h4>{{ 'old-kra-component.old-kra' | translate }}</h4>
+      <div class="filters">
+        <div class="filters-label">
+          <h4>{{ 'old-kra-component.filter' | translate }}</h4>
+        </div>
+        <div class="filters-dropdown">
+          <div class="mentees-filter">
+            <!-- <h4>MENTEE NAME</h4> -->
+            <div class="dropdown-names">
+              <div class="material-input">
+                <div class="text-input">
+                  <input class="input-text" (keyup)="setFlag(searchText)" [(ngModel)]="searchText" type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="input-label">{{ 'old-kra-component.mentee-name' | translate }}</label>
+                </div>
+              </div>
+              <div class="search-dropdown" *ngIf="flag">
+                <div class="search-results" *ngFor="let name of names | filter : searchText">
+                  {{ name }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="from-to-filters">
+            <div class="from-filter">
+              <h4>{{ 'old-kra-component.from' | translate }}</h4>
+              <div class="dropdown-from">
+                <div class="dropdown-custom">
+                  <div class="select">
+                    <select name="quarterFrom" id="quarterFrom">
+                      <option selected="selected">Q1</option>
+                      <option>Q2</option>
+                      <option>Q3</option>
+                      <option>Q4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-custom">
+                  <div class="select">
+                    <select name="yearFrom" id="yearFrom">
+                      <option selected="selected">2018</option>
+                      <option>2019</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="to-filter">
+              <h4>{{ 'old-kra-component.to' | translate }}</h4>
+              <div class="dropdown-from">
+                <div class="dropdown-custom">
+                  <div class="select">
+                    <select oninput="enableToYear" name="quarterTo" id="quarterTo">
+                      <option selected="selected">Q1</option>
+                      <option>Q2</option>
+                      <option>Q3</option>
+                      <option>Q4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-custom">
+                  <div class="select">
+                    <select name="yearTo" id="yearTo">
+                      <option selected="selected">2018</option>
+                      <option>2019</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-button">
+            <button class="submit ripple">{{ 'old-kra-component.submit' | translate }}</button>
+          </div>
+        </div>
+      </div>
+      <hr class="line-separator">
+    </div>
+    <!-- <div class="old-kra-contents">
+      <div class="kra-content-label">
+        <div class="kra-set">
+          <h4>
+            {{ 'old-kra-component.kra-set' | translate }} 1
+          </h4>
+        </div>
+        <div class="kra-year">
+          <p>
+            {{ 'old-kra-component.year' | translate }} 2019
+            /
+            {{ 'old-kra-component.quarter' | translate }} Q1
+          </p>
+        </div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            {{ 'old-kra-component.priority' | translate }}
+          </td>
+          <td>
+            {{ 'old-kra-component.kra' | translate }}
+          </td>
+          <td>
+            {{ 'old-kra-component.self-gyaan' | translate }}
+          </td>
+          <td>
+            {{ 'old-kra-component.way-forward' | translate }}
+          </td>
+        </tr>
+      </thead>
+    </table> -->
+  </div>
+</section>

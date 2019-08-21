@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import '~normalize.css';
+
+body {
+    background-color: #fdf7f7;
+    font-family: 'Open Sans', sans-serif;
+}
+/* html, body { height: 100%; } */
+html {
+    min-height: 99%;
+    position: relative;
+}
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
