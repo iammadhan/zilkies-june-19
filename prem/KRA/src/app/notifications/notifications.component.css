@@ -1,0 +1,74 @@
+.main-section {
+    margin: 20px auto;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 5px 1px #ccc;
+}
+
+.current-task {
+    display: flex;
+    color: #ff5063;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    justify-content: flex-start;
+}
+
+.main-contents {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 25px 0px;
+}
+
+.cards-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 2px 5px 10px #ccc;
+
+}
+
+
+.card_title,
+.card_content {
+    text-align: justify;
+    color: black;
+    font-size: 14px;
+    box-sizing: border-box;
+    line-height: 25px;
+    cursor: default;
+
+}
+
+.card_title {
+    width: 20px;
+    font-weight: bold;
+}
+
+.card_content {
+    width: 600px;
+
+}
+
+.card:hover {
+    border: 2px solid #ff6053;
+    box-shadow: 2px 5px 10px #ccc;
+}
+
+.cards-list>div:nth-child(even) {
+    background-color: #f6f6f6;
+}

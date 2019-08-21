@@ -1,0 +1,56 @@
+{
+    "nav-bar": {
+        "home": "MY HOME",
+        "mentees": "MENTEES",
+        "notifications": "NOTIFICATIONS",
+        "oldKra": "OLD KRA",
+        "user": "ZILKERTECH@ZTECH.IO",
+        "login": "LOGIN",
+        "logout": "LOGOUT"
+    },
+    "footer": {
+        "message": "2019 ZILKER TECHNOLOGY ALL RIGHTS RESERVED"
+    },
+    "mail-box": {
+        "check-mail": "CHECK YOUR MAIL-BOX",
+        "mail-page": "GO TO YOUR MAIL",
+        "check-mailbox": "WE HAVE SENT YOU MAIL REGARDING YOUR REQUEST ON PASSWORD RESET"
+    },
+    "password-changed": {
+        "passwordchanged-info": "YOUR PASSWORD HAS BEEN SUCCESSFULLY CHANGED BY YOUR REQUEST",
+        "pass-changed": "PASSWORD CHANGED",
+        "hello": "Hello,",
+        "login": "LOGIN"
+    },
+    "set-password": {
+        "set-pass": "SET PASSWORD",
+        "new-password": "NEW PASSWORD",
+        "confirm-password": "CONFIRM PASSWORD",
+        "password-mismatch": "Password Mismatch",
+        "email": "E-MAIL",
+        "submit": "SUBMIT"
+    },
+    "kra-home": {
+        "current-kra": "CURRENT KRAS",
+        "kra-set": "KRA SET",
+        "quarter": "QUARTER:",
+        "year": "YEAR:",
+        "slash": "/",
+        "serial-number": "# NO",
+        "kra": "KRA",
+        "self-gyan": "SELF GYAN",
+        "way-forward": "WAY FORWARD"
+    },
+    "notifications": {
+        "task": "PENDING TASKS"
+
+    },
+    "forgot-password": {
+        "forgot-pass": "FORGOT PASSWORD",
+        "invalid-mail": "Mail Does Not Exist",
+        "enter-mail": "Enter a valid email",
+        "email": "E-MAIL",
+        "login": "LOGIN",
+        "submit": "SUBMIT"
+    }
+}
