@@ -1,0 +1,16 @@
+<header class="app-header">
+    <div class="logo">
+      <img src="assets/img/asset-Logo.svg" class="image" alt="Zilker Technology">
+    </div>
+    <nav *ngIf="isLoggedIn" class="nav-links">
+      <a >{{'nav-bar.home' | translate}}</a>
+      <a >{{'nav-bar.mentees' | translate}}</a>
+      <a >{{'nav-bar.notifications' | translate}}</a>
+      <a >{{'nav-bar.oldKra' | translate}}</a>
+    </nav>
+    <div class="user-account">
+      <a *ngIf="isLoggedIn" class="user-mail" >{{'nav-bar.user' | translate}}</a>
+      <a *ngIf="isLoggedIn" >{{'nav-bar.logout' | translate}}</a>
+      <a >{{'nav-bar.login' | translate}}</a>
+    </div>
+  </header>
