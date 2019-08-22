@@ -1,3 +1,4 @@
+import { KraListService } from './kra-list.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +10,8 @@ import { SelfGyaanComponent } from './self-gyaan/self-gyaan.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule, FormsModule,
+    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
@@ -29,7 +31,7 @@ import { FormsModule } from '@angular/forms';
         }
     })
   ],
-  providers: [],
+  providers: [KraListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

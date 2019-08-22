@@ -269,3 +269,21 @@ a {
   background-size: 100%;
   transition: background 0s;
 }
+
+.alert {
+	margin: 20px 0px;
+	width: 300px
+}
+
+#alertText {
+	color: red;
+	font-size: 12px;
+}
+
+.disableButton, .disableButton:hover {
+  background-color: grey;
+}
+
+.enableButton {
+  background-color:#FF5063;
+}

@@ -7,6 +7,7 @@
     "quarter": "QUARTER:",
     "priority": "PRIORITY",
     "kra": "KRA",
+    "invalid":"This field is required",
     "self-gyaan": "SELF GYAAN",
     "way-forward": "WAY FORWARD"
   },
