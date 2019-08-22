@@ -13,18 +13,25 @@ export class SelfGyaanComponent implements OnInit {
   form: FormGroup;
 
   ngOnInit() {
+  this.kraList = this.service.getKra();
   this.form = this.toFormGroup(this.kraList);
   }
 
-  constructor(service: KraListService) {
-    this.kraList = service.getKra();
-    this.toFormGroup(this.kraList);
+  noWhitespaceValidator(control: FormControl) {
+    const isWhitespace = (control.value || '').trim().length === 0;
+    const isValid = !isWhitespace;
+    return isValid ? null : { 'whitespace': true };
+}
+
+  constructor (private service: KraListService) {
 
   }
+
+
   toFormGroup(kraList) {
     let group: any = {};
     this.kraList.forEach((kra, index) => {
-      group[index] = new FormControl('', Validators.required);
+      group[index] = new FormControl('', [Validators.required, this.noWhitespaceValidator]);
     });
 
     return new FormGroup(group);
