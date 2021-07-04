@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/dashboard-styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <h1 id="disp"></h1>
+        <a onclick="logout()">LOGOUT</a>
+    </nav>
+
+    <section class="container">
+
+        <div class="table-card">
+            <div class="student-table">
+                <table id="table">
+                    <thead>
+                        <tr id="tableHead">
+                            <th onclick="SortTable(2,'N')">ID</th>
+                            <th id="username">Name</th>
+                            <th>Work Description</th>
+                            <th onclick="SortTable(3,'D','mdy')">Date of Work</th>
+                            <th>Hours</th>
+                            <th>Remaining Hours</th>
+                            <th>Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="form" class="form-card">
+            <form>
+                <div class="input-sec">
+                    <!-- <input type="text" id="id" name="id" placeholder="ID."> -->
+                    <!-- <input type="text" id="nameTxt" name="name" placeholder="Name"> -->
+                    <input type="text" id="workDesc" name="workDescription" placeholder="Work Description">
+                    <input type="date" id="date" name="dateOfWork" placeholder="Date of Work">
+                    <input id="hours" oninput="calculate()" type="number" name="hours" placeholder="Hours">
+                    <input type="number" id="remainingHours" name="remainingHours" placeholder="Remaining Hours" disabled>
+                </div>
+                <div id="addSec" class="add-sec">
+                    <input type="button" class="ripple" name="button" Value="+" onClick="addFields(this.form)">
+                </div>
+                <div id="editSec" class="add-sec">
+                    <button type="button" class="ripple mater" name="button" onClick="editFields(this.form)">
+                        <i class="material-icons">edit</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <div id="fab" class="fab">
+        <button onclick="fab()" class="ripple">
+            <i class="material-icons">description</i>
+        </button>
+    </div>
+
+    <script src="../scripts/dashboard-scripts.js"></script>
+
+</body>
+
+</html>
