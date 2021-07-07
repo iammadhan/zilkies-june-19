@@ -1,0 +1,21 @@
+{
+  "create-kra": {
+    "title": "ADD NEW KRA'S",
+    "kra-set": "KRA SET 1",
+    "mentee-name": "MENTEE NAME",
+    "year": "YEAR:",
+    "quarter": "QUARTER:",
+    "priority": "PRIORITY",
+    "kra": "KRA",
+    "self-gyaan": "SELF GYAAN",
+    "way-forward": "WAY FORWARD"
+  },
+  "nav-bar": {
+    "home": "MY HOME",
+    "mentees": "MENTEES",
+    "notifications": "NOTIFICATIONS",
+    "old-kra": "OLD KRA",
+    "zilker-email": "ZILKERTECH@ZTECH.IO",
+    "logout": "LOGOUT"
+  }
+}

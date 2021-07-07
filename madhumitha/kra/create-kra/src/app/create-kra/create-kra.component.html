@@ -1,0 +1,62 @@
+<div class="current-kra shadow">
+  <div class="topic">
+    <p>{{'create-kra.title' | translate}}</p>
+  </div>
+  <div>
+    <div class="kra-set">
+      <div class="set">
+        <div>{{'create-kra.kra-set' | translate}}</div>
+      </div>
+      <div class="choose-mentee">
+        <div class="mentee-name">
+          <p>{{'create-kra.mentee-name' | translate}}</p>
+          <div class="mentee-list">
+            <select name="cars">
+              <option value="none"></option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+      <div class="year">
+        <p> {{'create-kra.year' | translate}}2019 / {{'create-kra.quarter' | translate}}1</p>
+      </div>
+    </div>
+  </div>
+  <div class="display-kra">
+    <div class="table-topic">
+      <div class="priority">
+        <p>{{'create-kra.priority' | translate}}</p>
+      </div>
+      <div class="kra-topic">
+        <p>{{'create-kra.kra' | translate}}</p>
+      </div>
+      <div class="self-gyaan-topic">
+        <p>{{'create-kra.self-gyaan' | translate}}</p>
+      </div>
+      <div class="way-forward-topic">
+        <p>{{'create-kra.way-forward' | translate}}</p>
+      </div>
+    </div>
+    <div id="table-parent" *ngFor="let row of kraRow; let rowNumber=index">
+      <app-kra-row [iterator]="rowNumber+1" (messageEvent)="receiveNumber($event)" [kraValue]="row">
+
+      </app-kra-row>
+    </div>
+    <div class="addNewRow"><i class="fas fa-plus" (click)="addNewRow()"></i></div>
+
+  </div>
+  <div class="invalid" *ngIf="errorMessage">kra is a required field</div>
+
+  <div class="end">
+    <input class="cancel-button ripple-save" type="button" (click)="onSave()" value="SAVE">
+    <input class="submit ripple" type="submit" (click)="onSubmit()" value="SUBMIT">
+
+  </div>
+</div>

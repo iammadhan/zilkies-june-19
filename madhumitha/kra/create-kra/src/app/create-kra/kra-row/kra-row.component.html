@@ -1,0 +1,27 @@
+<form name="kraForm" #kraForm>
+  <div class="table-row">
+    <div class="display-number">
+      <p class="prioritynumber">{{iterator}}.</p>
+    </div>
+    <div class="kra-data">
+      <label for="kra"></label>
+      <p><textarea class="kra-desc form-control" [(ngModel)]="kraValue.value" rows="4" required cols="4" name="kraText"
+          #kra></textarea></p>
+    </div>
+    <div class="self-gyaan-text">
+      <p class="gyaan-content">
+        -
+      </p>
+    </div>
+    <div class="way-forward-section">
+      <p>
+        -
+      </p>
+    </div>
+
+    <div class="drag-cancel">
+      <div><i class="fas fa-window-close fa-2x cancel-icon" (click)="deleteRow()"></i> </div>
+    </div>
+  </div>
+
+</form>
